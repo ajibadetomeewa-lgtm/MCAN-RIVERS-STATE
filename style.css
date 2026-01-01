@@ -3,6 +3,10 @@
     padding: 0%;
     box-sizing: border-box;
 }
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+}
 :root{
   --primary-green: #0B5A2B;   /* Deep MCAN green */
   --secondary-green: #1D7A3F; /* Softer green */
@@ -87,7 +91,8 @@ text-shadow: 2px 2px 2px var(--text-muted);
 main .section{
   display: flex;
   gap: 2rem;
-  margin-left: 10rem;
+  margin-left: 0;
+  padding-inline: 1rem;
 }
 main .section .visii p img{
   border-radius: 17px;
@@ -346,6 +351,11 @@ footer .copy{
   font-family: var(--body-font);
   font-size: 22px;
 }
+@media (max-width:1280px) {
+  main .section{
+      margin-left: 10rem;
+  }
+}
 @media (max-width:1030px) {
   body{
     width: 100%;
@@ -408,13 +418,14 @@ footer .social{
   }
   header .menu{
     width: 300px;
+    position: relative;
   }
 header .menu .menu-icon{
   display: block;
   font-size: 40px;
-  position: relative;
+  position: absolute;
   left: 13rem;
-  bottom: 10px;
+  top: 30px;
 }
   header .navbar{
   flex-direction: column;
@@ -426,6 +437,7 @@ header .menu .menu-icon{
   right: 10px;
   display: none;
   z-index: 1000;
+  top: 6rem;
 }
 header ul{
   flex-direction: column;
@@ -447,8 +459,7 @@ header ul li:hover{
 }
 main .section{
   flex-direction: column-reverse;
-  margin-left: 0;
-  padding-inline: 1rem;
+
 }
 main .section .aim{
   margin: 10px;
@@ -475,7 +486,7 @@ width: 95%;
 }
 main .section-ii ul{
   list-style: none;
-  width: 35%;
+  width: 95%;
   margin: auto;
   font-size: 22px;
 }
