@@ -2,7 +2,6 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    /* background-color: var(--bg-color) ; */
 }
 :root{
   --primary-green: #0B5A2B;   /* Deep MCAN green */
@@ -397,6 +396,7 @@ footer .social{
   margin-left: 3rem;
 }
 }
+
 @media (max-width:600px) {
    body{
     width: 100%;
@@ -447,7 +447,8 @@ header ul li:hover{
 }
 main .section{
   flex-direction: column-reverse;
-  margin-left: 5px;
+  margin-left: 0;
+  padding-inline: 1rem;
 }
 main .section .aim{
   margin: 10px;
@@ -456,7 +457,12 @@ main .section .aim h3{
   font-size: 2rem;
 }
 main .section .visii p img{
-  width: 21rem;
+  width: 100%;
+  max-width: 35rem;
+}
+main .visiii p{
+  width: 100%;
+  max-width: 25rem;
 }
 main .section-ii h3{
   text-align: center;
