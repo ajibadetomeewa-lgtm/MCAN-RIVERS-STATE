@@ -394,6 +394,10 @@ footer .social{
 }
 }
 @media (max-width:600px) {
+   body{
+    width: 100%;
+    overflow-x: hidden;
+       }
   header .logo img{
     width: 100px;
     height: 70px;
@@ -498,7 +502,11 @@ footer .social{
   padding-top: 20px;
 }
 }
-@media (max-width:390px) {
+@media (max-width:390px) { 
+  body{
+    width: 100%;
+    overflow-x: hidden;
+  }
  header .menu .menu-icon{
   left: 10rem;
 }
